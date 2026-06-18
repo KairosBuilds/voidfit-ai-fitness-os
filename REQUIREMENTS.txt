@@ -1,0 +1,62 @@
+===== VOIDFIT AI - APP REQUIREMENTS =====
+
+1. PREREQUISITES
+   - Node.js 18+ (tested with 20.x / 22.x)
+   - npm 9+
+
+2. QUICK START
+   npm install
+   npm run dev
+   -> Opens at http://localhost:3000
+
+3. ENVIRONMENT VARIABLES (create .env file)
+   VITE_GOOGLE_CLIENT_ID=your_google_oauth_client_id
+   (Get from https://console.cloud.google.com/apis/credentials)
+
+4. SCRIPTS
+   npm run dev      - Development server (Vite)
+   npm run build    - Production build
+   npm run preview  - Preview production build
+   npm run test     - Run test suite
+
+5. TECH STACK
+   - React 19 + TypeScript (~5.8)
+   - Vite 6 (bundler/dev server)
+   - Tailwind CSS v4 (styling)
+   - Zustand 5 (state management)
+   - Dexie 4 (IndexedDB wrapper)
+   - Firebase 11 (auth backend)
+   - Google Generative AI SDK (AI features)
+   - Framer Motion 12 (animations)
+   - Recharts 3 (charts)
+   - Leaflet (territory map)
+   - Zod 4 (schema validation)
+   - Sentry (error tracking)
+
+6. BROWSER SUPPORT
+   - Chrome / Edge (desktop + Android)
+   - Safari (macOS + iOS)
+   - Firefox
+   - Uses DeviceMotion API for step counting
+   - Uses Geolocation API for distance tracking
+
+7. WHAT'S INCLUDED
+   - All app source code (components, services, stores, hooks)
+   - Authentication (Google Sign-In + Firebase)
+   - AI-powered coach (Chatbot, meal/form analysis)
+   - Step counter with accelerometer-based detection
+   - Territory/zone tracking via GPS
+   - Multiplayer (Guilds, Leaderboard, PvP)
+   - Gamification (XP, levels, skill trees)
+   - Daily missions & weekly check-ins
+   - Nutrition & recovery logging
+   - Body anatomy tracking
+
+8. WHAT'S REMOVED (vs original repo)
+   - Electron desktop wrapper
+   - Capacitor Android/iOS build config
+   - Firebase hosting config
+   - Documentation files
+   - Unused components (never imported)
+   - Test dependencies (kept test source)
+   - CI/CD config
