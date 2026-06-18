@@ -1,5 +1,31 @@
-# Logs
-logs
+# =========================================================================
+# VoidFit AI - Fitness OS - Comprehensive Git Ignore Rules
+# =========================================================================
+
+# -------------------------------------------------------------------------
+# Dependency Directories
+# -------------------------------------------------------------------------
+node_modules/
+jspm_packages/
+web_stage/
+
+# -------------------------------------------------------------------------
+# Build & Production Outputs
+# -------------------------------------------------------------------------
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.docusaurus/
+
+# -------------------------------------------------------------------------
+# Logs and Debugging
+# -------------------------------------------------------------------------
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,31 +33,97 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# -------------------------------------------------------------------------
+# Testing and Coverage
+# -------------------------------------------------------------------------
+coverage/
+.nyc_output/
+*.lcov
+.vitest/
+.jest/
 
-# Environment & secrets — never commit these
+# -------------------------------------------------------------------------
+# Environment & Secrets (NEVER commit local secrets or API keys)
+# -------------------------------------------------------------------------
 .env
-.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.env
+# But do commit the example template so other developers know what variables are needed
 !.env.example
 
-# Firebase config — contains project IDs and service accounts
+# -------------------------------------------------------------------------
+# Firebase Deployment & Project Configuration
+# -------------------------------------------------------------------------
+.firebase/
 .firebaserc
 firebase.json
-.firebase/
 
-# Editor directories and files
+# -------------------------------------------------------------------------
+# IDE / Editor Configurations
+# -------------------------------------------------------------------------
+
+# VS Code
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
 
-# Blog post
+# IntelliJ / WebStorm / PhpStorm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Emacs
+*~
+*.swp
+*.swo
+*.swn
+.netrwhist
+*#
+
+# -------------------------------------------------------------------------
+# Operating System Files
+# -------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.cab
+*.msi
+*.msm
+*.msp
+
+# -------------------------------------------------------------------------
+# Local/User specific documentation & scratch files
+# -------------------------------------------------------------------------
 blog-post/
+scratch/
+temp/
+tmp/
